@@ -1,0 +1,81 @@
+<div class="header">
+  <nav class="desktop-navbar">
+    <a href="http://" target="_blank" rel="noopener noreferrer" class="logo">
+      <img src="../../../assets/icons/k.svg" alt="" srcset="">
+    </a>
+
+    @if (!isMobile) {
+      <ul>
+        <li>
+          <div class="link">
+            <a class="active" href="http://">Anime</a>
+          </div>
+        </li>
+        <li>
+          <div class="link">
+            <a href="http://">Mangá</a>
+          </div>
+        </li>
+        <li>
+          <div class="link">
+            <a href="http://">Characters</a>
+          </div>
+        </li>
+        <li>
+          <div class="link">
+            <a href="http://">Reviews</a>
+          </div>
+        </li>
+      </ul>
+    }
+
+    @if (!isOpenMenuBar && isMobile) {
+      <div class="menu" (click)="isOpenMenuBar = !isOpenMenuBar">
+        <img src="../../../assets/icons/bars.svg" alt="">
+      </div>
+    }
+  </nav>
+
+  @if(isMobile && isOpenMenuBar) {
+    <nav class="mobile-navbar">
+      <div class="btn-close" (click)="isOpenMenuBar = !isOpenMenuBar">
+          <img src="../../../assets/icons/close.svg" alt="">
+      </div>
+      <ul>
+        <li>
+          <div class="link">
+            <i>
+              <img src="../../../assets/icons/arrow-right.svg" alt="">
+            </i>
+            <a href="http://">Anime</a>
+          </div>
+        </li>
+        <li>
+          <div class="link">
+            <i>
+              <img src="../../../assets/icons/arrow-right.svg" alt="">
+            </i>
+            <a href="http://">Mangá</a>
+          </div>
+        </li>
+        <li>
+          <div class="link">
+            <i>
+              <img src="../../../assets/icons/arrow-right.svg" alt="">
+            </i>
+            <a href="http://">Characters</a>
+          </div>
+        </li>
+        <li>
+          <div class="link">
+            <i>
+              <img src="../../../assets/icons/arrow-right.svg" alt="">
+            </i>
+            <a href="http://">Reviews</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  }
+
+</div>

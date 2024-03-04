@@ -1,0 +1,121 @@
+.header {
+  overflow: hidden;
+  position: relative;
+  padding: 30px 18px;
+  background-color: black;
+
+  .desktop-navbar {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      border-radius: 50%;
+      padding: 5px;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, darkgreen, transparent);
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    ul {
+      display: flex;
+      width: 100%;
+      list-style: none;
+
+      li {
+        padding-left: 32px;
+
+        .link {
+          display: flex;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-right: 40px;
+            opacity: 0.5;
+            color: #fff;
+          }
+
+          a.active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-navbar {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+
+    ul {
+      background-color: #ffffff !important;
+      position: absolute;
+      width: 100%;
+
+      li {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 4px solid #ffffff;
+        padding: 32px 0px 32px 32px;
+
+        .link {
+          display: flex;
+          align-items: center;
+
+          i {
+            height: 42px;
+
+            img {
+              width: 28px;
+              height: 42px;
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 32px;
+      line-height: 42px;
+      display: block;
+      padding-left: 50px;
+    }
+
+    .btn-close {
+      padding: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .menu {
+    margin-left: auto;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
