@@ -1,0 +1,12 @@
+<section class="home-content">
+  <div>
+    <app-content-card [anime]="animes.data[0]"></app-content-card>
+  </div>
+  <div>
+    @for (item of animes.data; track $index) {
+      @if($index !== 0) {
+        <app-content-card size="small" [anime]="item" [index]="$index"></app-content-card>
+      }
+    }
+  </div>
+</section>

@@ -1,0 +1,10 @@
+<div class="card" [class]="size" [class.top-border]="index == 1">
+  <div class="image" [class.order-2]="size === 'small'">
+    <img [src]="anime?.images?.jpg?.large_image_url" alt="Anime image">
+  </div>
+  <div class="info">
+    <span>{{ anime?.aired?.string }}</span>
+    <h2>{{ animeTitle }}</h2>
+    <p>{{ anime?.synopsis }}</p>
+  </div>
+</div>
