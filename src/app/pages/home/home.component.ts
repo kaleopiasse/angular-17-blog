@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentCardComponent } from '../content-card/content-card.component';
+import { CardComponent } from '../../components/card/card.component';
 import { AnimesService } from '../../core/services/animes.service';
 import { tap } from 'rxjs';
 import { TopAnimesResponse } from '../../core/types/animes.types';
+import { PageTitleComponent } from '../../components/page-title/page-title.component';
 
 @Component({
-  selector: 'app-home-content',
+  selector: 'app-home',
   standalone: true,
-  imports: [ContentCardComponent],
-  templateUrl: './home-content.component.html',
-  styleUrl: './home-content.component.css',
+  imports: [CardComponent, PageTitleComponent],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css',
 })
-export class HomeContentComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   animes: TopAnimesResponse = {
     data : [],

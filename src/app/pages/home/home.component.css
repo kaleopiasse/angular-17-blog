@@ -1,5 +1,5 @@
 @media (min-width: 992px) {
-  .home-content {
+  .home {
     display: flex;
     column-gap: 30px;
   }

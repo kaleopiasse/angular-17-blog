@@ -2,13 +2,13 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Anime } from '../../core/types/animes.types';
 
 @Component({
-  selector: 'app-content-card',
+  selector: 'app-card',
   standalone: true,
   imports: [],
-  templateUrl: './content-card.component.html',
-  styleUrl: './content-card.component.css'
+  templateUrl: './card.component.html',
+  styleUrl: './card.component.css'
 })
-export class ContentCardComponent implements OnInit {
+export class CardComponent implements OnInit {
 
   @Input() anime?: Anime;
 
