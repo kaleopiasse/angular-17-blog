@@ -10,3 +10,12 @@ h1 {
   text-transform: uppercase;
   line-height: 42px;
 }
+
+@media (min-width: 768px) {
+  h1 {
+    margin: 20px 0px 60px;
+    padding: 40px 0px;
+    font-size: 98px;
+    line-height: 70px;
+  }
+}

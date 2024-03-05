@@ -82,3 +82,103 @@
 .top-border {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .card {
+
+    &.small {
+
+      .image {
+        min-width: 150px;
+        max-width: 150px;
+      }
+
+      img {
+        padding-right: 32px;
+      }
+
+      p {
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    &.medium {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+
+      .image {
+        min-width: 300px;
+        max-width: 300px;
+      }
+
+      img {
+        padding-right: 32px;
+      }
+
+      p {
+        -webkit-line-clamp: 9;
+      }
+    }
+
+    .order-2 {
+      order: unset;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    padding: 0 20px;
+
+    &.small {
+
+      .image {
+        min-width: 150px;
+        max-width: 150px;
+      }
+
+      img {
+        padding-right: 32px;
+      }
+
+      p {
+        -webkit-line-clamp: 2;
+      }
+
+      h2 {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    &.medium {
+      display: block;
+
+      .img {
+        padding-right: 0px;
+        padding-left: 0px;
+        max-width: 400px;
+      }
+
+      p {
+        -webkit-line-clamp: 9;
+      }
+
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .order-2 {
+      order: unset;
+    }
+  }
+
+  .top-border {
+    border-top: unset;
+  }
+}
+
