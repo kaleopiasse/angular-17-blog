@@ -1,10 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Anime } from '../../core/types/animes.types';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })

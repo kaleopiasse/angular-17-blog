@@ -2,11 +2,12 @@ import { Component, DestroyRef, OnInit, inject } from '@angular/core';
 import { BreakpointService } from '../../core/services/breakpoint.service';
 import { tap } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

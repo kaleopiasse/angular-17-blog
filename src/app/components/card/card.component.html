@@ -4,7 +4,9 @@
   </div>
   <div class="info">
     <span>{{ anime?.aired?.string }}</span>
-    <h2>{{ animeTitle }}</h2>
-    <p>{{ anime?.synopsis }}</p>
+    <a [routerLink]="['/content', anime?.mal_id]">
+      <h2>{{ animeTitle }}</h2>
+      <p>{{ anime?.synopsis }}</p>
+    </a>
   </div>
 </div>
