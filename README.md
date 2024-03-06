@@ -1,6 +1,16 @@
-# Angular17Blog
+# Angular 17 Blog
+Project for studies using Angular version 17.2.0, responsive and based on [Dwinawan's blog design](https://dribbble.com/shots/18089191-Blog-Layout).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+## Next features
+
++ Loading feedback
++ add colors variables
++ add linting
++ Mangás section
++ Characters section
++ Reviews section
++ more ...
+
 
 ## Development server
 
